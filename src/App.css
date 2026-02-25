@@ -1,0 +1,25 @@
+.app-layout {
+  min-height: 100vh;
+}
+
+.main-content {
+  margin-left: var(--sidebar-width);
+  padding-top: var(--navbar-height);
+  padding: calc(var(--navbar-height) + var(--space-8)) var(--space-8) var(--space-8);
+  min-height: 100vh;
+  transition: margin-left var(--transition-normal);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
+    padding: calc(var(--navbar-height) + var(--space-5)) var(--space-4) var(--space-4);
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content {
+    padding: calc(var(--navbar-height) + var(--space-4)) var(--space-3) var(--space-3);
+  }
+}

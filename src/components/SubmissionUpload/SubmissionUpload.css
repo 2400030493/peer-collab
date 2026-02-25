@@ -1,0 +1,124 @@
+.submission-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+}
+
+.submission-form-header h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: var(--space-2);
+}
+
+.submission-form-header p {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+/* Drop Zone */
+.drop-zone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-3);
+    padding: var(--space-10) var(--space-6);
+    border: 2px dashed var(--gray-300);
+    border-radius: var(--radius-xl);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    background: var(--gray-50);
+}
+
+.drop-zone:hover,
+.drop-zone.active {
+    border-color: var(--primary-400);
+    background: var(--primary-50);
+}
+
+.drop-zone.error {
+    border-color: var(--danger-400);
+    background: var(--danger-50);
+}
+
+.drop-zone-icon {
+    color: var(--gray-400);
+}
+
+.drop-zone.active .drop-zone-icon,
+.drop-zone:hover .drop-zone-icon {
+    color: var(--primary-500);
+}
+
+.drop-zone-text {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.drop-zone-text strong {
+    color: var(--primary-600);
+}
+
+.drop-zone-hint {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+/* File List */
+.file-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.file-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-3) var(--space-4);
+    background: var(--gray-50);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-color);
+}
+
+.file-item-info {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+.file-item-icon {
+    font-size: 1.25rem;
+}
+
+.file-item-name {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.file-item-size {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+.file-remove-btn {
+    color: var(--text-muted);
+    font-size: 0.875rem;
+    padding: var(--space-1) var(--space-2);
+    border-radius: var(--radius-sm);
+    transition: all var(--transition-fast);
+}
+
+.file-remove-btn:hover {
+    color: var(--danger-500);
+    background: var(--danger-50);
+}
+
+.submission-form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--space-3);
+    padding-top: var(--space-3);
+    border-top: 1px solid var(--border-color);
+}

@@ -1,0 +1,106 @@
+.projects-page {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+}
+
+/* Filter Tabs */
+.filter-tabs {
+    display: flex;
+    gap: var(--space-2);
+    flex-wrap: wrap;
+    background: var(--bg-card);
+    padding: var(--space-2);
+    border-radius: var(--radius-xl);
+    border: 1px solid var(--border-color);
+}
+
+.filter-tab {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    border-radius: var(--radius-lg);
+    transition: all var(--transition-fast);
+}
+
+.filter-tab:hover {
+    color: var(--text-primary);
+    background: var(--gray-50);
+}
+
+.filter-tab.active {
+    color: white;
+    background: linear-gradient(135deg, var(--primary-500), var(--primary-600));
+    box-shadow: 0 2px 8px rgba(99, 102, 241, 0.3);
+}
+
+.filter-count {
+    font-size: 0.7rem;
+    padding: 0.1rem 0.4rem;
+    border-radius: var(--radius-full);
+    background: rgba(0, 0, 0, 0.08);
+}
+
+.filter-tab.active .filter-count {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.projects-grid-page {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    gap: var(--space-5);
+}
+
+/* Modal */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: var(--space-4);
+    animation: fadeInUp 0.2s ease;
+}
+
+.modal-content {
+    width: 100%;
+    max-width: 560px;
+    max-height: 90vh;
+    overflow-y: auto;
+    animation: scaleIn 0.2s ease;
+}
+
+/* Create Form */
+.create-assignment-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+}
+
+.create-assignment-form h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-4);
+}
+
+@media (max-width: 640px) {
+    .projects-grid-page {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}

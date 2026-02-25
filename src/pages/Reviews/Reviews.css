@@ -1,0 +1,133 @@
+.reviews-page {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+}
+
+.reviews-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+
+.review-item {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+}
+
+.review-item-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: var(--space-4);
+}
+
+.review-item-info h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.review-item-info p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-top: 2px;
+}
+
+.review-score {
+    display: flex;
+    align-items: baseline;
+    gap: 2px;
+}
+
+.score-value {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--primary-600);
+}
+
+.score-label {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.review-item-feedback {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    font-style: italic;
+    padding-left: var(--space-4);
+    border-left: 3px solid var(--primary-200);
+}
+
+.review-item-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: var(--space-3);
+    border-top: 1px solid var(--gray-100);
+}
+
+.review-date {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+/* Pending Assignments */
+.pending-assignments {
+    margin-top: var(--space-4);
+}
+
+.pending-assignments h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: var(--space-4);
+}
+
+.assignment-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+}
+
+.assignment-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+}
+
+.assignment-item h4 {
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.assignment-item p {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+/* Assign Modal */
+.assign-modal {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+}
+
+.assign-modal h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.assign-desc {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    margin-top: -0.5rem;
+}
+
+@media (max-width: 640px) {
+    .review-item-header {
+        flex-direction: column;
+    }
+}
